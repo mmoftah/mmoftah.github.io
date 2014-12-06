@@ -81,17 +81,7 @@
 			<li> <a href="#join" class="smoothScroll"> Join Us</a></li>
 	  </ul>
 	  <ul class="nav navbar-nav navbar-right">
-	<?php
-	include_once 'assets/includes/status.class.php';
-	$status = new MinecraftServerStatus();
-	$host = 'battlemc.serveminecraft.net';
-	$response = $status->getStatus($host);
-	if(!$response) {
-		echo"<li class='nav-pull-right'> <a><i class='fa fa-circle text-danger'></i> Server offline!</a></li>";
-	} else {
-		echo"<li class='nav-pull-right'> <a><i class='fa fa-circle text-success'></i> ".$response['players']."/".$response['maxplayers']." Online</a></li>";
-	}
-	?>
+
 	</ul>
         </div><!--/.nav-collapse -->
       </div>
